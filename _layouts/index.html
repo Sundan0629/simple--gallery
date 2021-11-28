@@ -4,15 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="{{ site.baseurl }}/">Gallery index</a>
-            <a href="{{ site.baseurl }}/about">About gallery</a>
+   <div id = "wrapper">
+        <div id = "header">
+            <nav>
+                <a href="{{ site.baseurl }}/">Gallery</a>
+                <a href="{{ site.baseurl }}/creators">Creators</a>
+                <a href="{{ site.baseurl }}/about">About</a>
+                <a href="{{ site.baseurl }}/search">Search</a>
         </nav>
     <div>
     <div class="container">    
         {{ content }}
     </div>
+        <div id = "footer">
+            <p>Created with <a href = "https://jekyllrb.com/">Jekyll</a> for teaching purposes by <a href = "https://github.com/Sundan0629/simple--gallery">Sundan0629</a> in 2021</p>
+        </div>
 </body>
